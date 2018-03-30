@@ -12,7 +12,7 @@ class PostsController < ApplicationController
       @post.update(post_params)
       redirect_to post_path(@post)
     else
-      redirect_to post_path(@post)
+      redirect_to :edit/[:id]
     end
   end
 
